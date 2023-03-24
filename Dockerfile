@@ -1,6 +1,6 @@
 FROM debian:bullseye
 
-RUN apt-get update && apt-get install curl unzip -y
+RUN apt-get update && apt-get install curl unzip jq -y
 
 RUN curl -LO https://releases.hashicorp.com/vault/1.13.0/vault_1.13.0_linux_amd64.zip
 RUN unzip vault_1.13.0_linux_amd64.zip
